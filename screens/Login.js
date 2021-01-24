@@ -1,13 +1,41 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { View, Text, StyleSheet, Button, Image } from "react-native";
 import { TextInput, TouchableOpacity } from "react-native-gesture-handler";
+import {AuthContext} from '../navigation/AuthProvider';
 
 const Login = ({ navigation }) => {
+    const [email, setEmail] = useState();
+    const [password, setPassword] = useState();
+
+    const {login} = useContext(AuthContext);
+
   return <View style={styles.mainView}>
-      <Image source={require('../assets/logo.png')} style={{ width: 300, height: 150 }} />
-      <TextInput style={styles.textInput} placeholder="Username" placeholderTextColor="#fff" />
-      <TextInput style={styles.textInput} placeholder="Password" placeholderTextColor="#fff" />
-      <Button title="LOGIN" onPress={() => navigation.navigate('root') }/>
+      <Image 
+        source={require('../assets/logo.png')} 
+        style={{ width: 300, height: 150 }} 
+      />
+      <TextInput 
+        labelValue={email}
+        style={styles.textInput} 
+        placeholder="Email" 
+        placeholderTextColor="#808080" 
+        onChangeText={(userEmail) => setEmail(userEmail)} 
+        keyboardType="email-address"
+        autoCapitalize="none"
+        autoCorrect={false}
+      />
+      <TextInput 
+        labelValue={password}
+        style={styles.textInput} 
+        placeholder="Password" 
+        placeholderTextColor="#808080" 
+        onChangeText={(userPassword) => setPassword(userPassword)}
+        secureTextEntry={true}
+      />
+      <Button 
+        title="LOGIN" 
+        onPress={() => login(email, password) }
+      />
       <Text style={{color: "#fff"}}>
           Don't have an accout? 
           <TouchableOpacity onPress= {() => navigation.navigate('SignUp')}>

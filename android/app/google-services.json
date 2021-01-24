@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "707018470605",
+    "project_id": "apinap-7b315",
+    "storage_bucket": "apinap-7b315.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707018470605:android:06fb1a0f77b26b218b2584",
+        "android_client_info": {
+          "package_name": "com.example.bitassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707018470605-u4h6jqeu35fimam0bc6pvcma525revgq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bitassistant",
+            "certificate_hash": "aaf8f8a2a546e29907d962535ef6deffcff9fd5b"
+          }
+        },
+        {
+          "client_id": "707018470605-9q4cn6inmflk4io6he49o1a4g19uhntg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZAZSq1cvfWiCakXztKYB8R2wxF_nI7U8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707018470605-9q4cn6inmflk4io6he49o1a4g19uhntg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
