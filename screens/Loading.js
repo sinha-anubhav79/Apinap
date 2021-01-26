@@ -4,7 +4,13 @@ import { Text, StyleSheet, View, Image } from "react-native";
 const Loading = ({ navigation }) => {
   return (
       <View style={styles.mainView}>
-          <Image source={require('../assets/Loading.png')} style={{width: "90%", height: 350}}  />
+          <Image 
+            source={require('../assets/Loading.png')} 
+            style={{
+                width: "90%", 
+                height: 350
+                }}  
+            />
       </View>
   );
 };
