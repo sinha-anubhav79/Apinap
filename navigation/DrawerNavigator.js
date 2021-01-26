@@ -2,6 +2,7 @@ import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
 import { View, Text, StyleSheet, Button } from "react-native";
+import Icon from "react-native-vector-icons/Ionicons";
 import HomeScreen from '../screens/HomeScreen';
 import ProfileScreen from '../screens/Profile';
 import AboutUs from "../screens/About";
@@ -41,9 +42,11 @@ function DrawerNavigator() {
         options={{
           title: 'Home', 
           headerLeft: () => (
-            <Button 
-              title="D" 
-              onPress={() => {navigation.openDrawer()}}
+            <Icon.Button 
+              name="menu" 
+              size={25} 
+              backgroundColor="#009387" 
+              onPress={() => {navigation.openDrawer()}} 
             />
           )
         }}
@@ -67,9 +70,11 @@ function DrawerNavigator() {
         options={{
           title: 'Profile',
           headerLeft: () => (
-            <Button 
-              title="D" 
-              onPress={() => {navigation.openDrawer()}}
+            <Icon.Button 
+              name="menu" 
+              size={25} 
+              backgroundColor="#009387" 
+              onPress={() => {navigation.openDrawer()}} 
             />
           )
         }}
@@ -93,9 +98,11 @@ function DrawerNavigator() {
         options={{
           title: 'About Us',
           headerLeft: () => (
-            <Button 
-              title="D" 
-              onPress={() => {navigation.openDrawer()}}
+            <Icon.Button 
+              name="menu" 
+              size={25} 
+              backgroundColor="#009387" 
+              onPress={() => {navigation.openDrawer()}} 
             />
           )
         }}
@@ -119,9 +126,11 @@ function DrawerNavigator() {
         options={{
           title: 'Loading...',
           headerLeft: () => (
-            <Button 
-              title="D" 
-              onPress={() => {navigation.openDrawer()}}
+            <Icon.Button 
+              name="menu" 
+              size={25} 
+              backgroundColor="#009387" 
+              onPress={() => {navigation.openDrawer()}} 
             />
           )
         }}
