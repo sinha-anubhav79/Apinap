@@ -42,7 +42,7 @@ const SignUp = ({ navigation }) => {
       />
       <Button 
         title="SIGN UP" 
-        onPress={() => register(email, password) }
+        onPress={() => register(email, password, name) }
       />
       <Text style={{color: "#fff"}}>
           Already have an accout?

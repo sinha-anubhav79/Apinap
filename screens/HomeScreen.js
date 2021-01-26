@@ -3,14 +3,8 @@ import { View, Text, StyleSheet, Button } from "react-native";
 import {AuthContext} from '../navigation/AuthProvider';
 
 const HomeScreen = ({ navigation }) => {
-    const {logout} = useContext(AuthContext);
-
   return <View style={styles.mainView}>
       <Text style={styles.text}>Home Screen</Text>
-      <Button 
-        title="LOGOUT" 
-        onPress={() => logout() }
-      />
   </View>
 };
 

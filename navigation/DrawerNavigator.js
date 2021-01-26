@@ -3,6 +3,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
 import { View, Text, StyleSheet, Button } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
+import { DrawerContent } from "../screens/DrawerContent";
 import HomeScreen from '../screens/HomeScreen';
 import ProfileScreen from '../screens/Profile';
 import AboutUs from "../screens/About";
@@ -18,7 +19,7 @@ const LoadStack = createStackNavigator();
 
 function DrawerNavigator() {
     return (   
-      <Drawer.Navigator initialRouteName="Home">
+      <Drawer.Navigator initialRouteName="Home" drawerContent={props => <DrawerContent {...props} />}>
         <Drawer.Screen name="Home" component={HomeStackScreen} />
         <Drawer.Screen name="Profile" component={ProfileStackScreen} />
         <Drawer.Screen name="About Us" component={AboutStackScreen} />
